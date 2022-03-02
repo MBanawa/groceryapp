@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:groceryapp/custom-widgets/welcome-slide.dart';
+import 'package:get/get.dart';
+import 'package:groceryapp/custom_widgets/welcome_slide.dart';
+import 'package:groceryapp/screens/login.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -16,7 +18,7 @@ class WelcomeScreen extends StatelessWidget {
             Expanded(
               child: Container(
                 child: CarouselSlider(
-                  items: [
+                  items: const [
                     WelcomeSlide(
                       image: 'assets/images/slide_1.png',
                       title: 'Get Fresh Food',
@@ -39,14 +41,17 @@ class WelcomeScreen extends StatelessWidget {
                 ),
               ),
             ),
+            // ignore: sized_box_for_whitespace
             Container(
               height: 80,
               width: MediaQuery.of(context).size.width,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(primary: Colors.green),
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(() => const LoginScreen());
+                },
                 child: const Text(
-                  'Getting Started',
+                  'Start Now',
                   style: TextStyle(fontSize: 20),
                 ),
               ),
