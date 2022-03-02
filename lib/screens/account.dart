@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:groceryapp/screens/address.dart';
+import 'package:groceryapp/screens/manage_address.dart';
+import 'package:groceryapp/screens/orders.dart';
 import 'package:groceryapp/screens/profile.dart';
 
 class AccountScreen extends StatelessWidget {
@@ -48,7 +50,9 @@ class AccountScreen extends StatelessWidget {
             title: const Text("My Orders"),
             subtitle: const Text("Manage my orders"),
             trailing: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.to(OrdersScreen());
+              },
               icon: const Icon(Icons.arrow_forward),
             ),
           ),
