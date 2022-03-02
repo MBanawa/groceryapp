@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:groceryapp/screens/register.dart';
+import 'package:groceryapp/screens/tabs.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -62,7 +63,9 @@ class LoginScreen extends StatelessWidget {
               height: 48,
               child: ElevatedButton(
                 child: const Text("Login"),
-                onPressed: () {},
+                onPressed: () {
+                  Get.offAll(const TabScreen());
+                },
               ),
             ),
             const SizedBox(height: 12),
