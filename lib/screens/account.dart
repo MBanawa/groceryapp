@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:groceryapp/screens/address.dart';
+import 'package:groceryapp/screens/profile.dart';
 
 class AccountScreen extends StatelessWidget {
   const AccountScreen({Key? key}) : super(key: key);
@@ -19,7 +22,9 @@ class AccountScreen extends StatelessWidget {
             title: const Text("Mikeruu Pogi"),
             subtitle: const Text("+639171593694"),
             trailing: TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.to(const ProfileScreen());
+              },
               child: const Text("Edit"),
             ),
           ),
@@ -55,7 +60,9 @@ class AccountScreen extends StatelessWidget {
             title: const Text("My Addresses"),
             subtitle: const Text("Manage delivery addresses"),
             trailing: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.to(const AddressScreen());
+              },
               icon: const Icon(Icons.arrow_forward),
             ),
           ),
