@@ -76,7 +76,10 @@ class OrdersScreen extends StatelessWidget {
         itemBuilder: (builderContext, index) {
           return ListTile(
             onTap: () {
-              Get.to(const OrderDetailScreen());
+              Get.to(OrderDetailScreen(
+                orderObj: _orders[index],
+                key: key,
+              ));
             },
             title: Text("# ${_orders[index]["id"]}"),
             subtitle: Column(
