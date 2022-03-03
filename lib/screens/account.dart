@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:groceryapp/screens/address.dart';
-import 'package:groceryapp/screens/manage_address.dart';
 import 'package:groceryapp/screens/orders.dart';
 import 'package:groceryapp/screens/profile.dart';
 
