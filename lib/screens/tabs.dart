@@ -13,7 +13,7 @@ class TabScreen extends StatefulWidget {
 class _TabScreenState extends State<TabScreen> {
   int _currentIndex = 0;
   final List _pages = [
-    const HomeScreen(),
+    HomeScreen(),
     CartScreen(),
     const AccountScreen(),
   ];
