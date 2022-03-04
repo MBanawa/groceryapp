@@ -93,6 +93,7 @@ class ProfileScreen extends StatelessWidget {
               Container(
                 child: TextButton(
                     onPressed: () {
+                      logout();
                       // Get.offAll(const WelcomeScreen());
                     },
                     child: const Text("Logout")),
