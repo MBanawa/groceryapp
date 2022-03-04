@@ -24,7 +24,7 @@ class AccountScreen extends StatelessWidget {
             subtitle: const Text("+639171593694"),
             trailing: TextButton(
               onPressed: () {
-                Get.to(const ProfileScreen());
+                Get.to(ProfileScreen());
               },
               child: const Text("Edit"),
             ),

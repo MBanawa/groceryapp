@@ -48,7 +48,7 @@ class WelcomeScreen extends StatelessWidget {
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(primary: Colors.green),
                 onPressed: () {
-                  Get.to(() => const LoginScreen());
+                  Get.to(() => LoginScreen());
                 },
                 child: const Text(
                   'Start Now',

@@ -42,7 +42,7 @@ class CartItem extends StatelessWidget {
                 children: [
                   Text(
                     title,
-                    style: const TextStyle(fontSize: 20.0),
+                    style: const TextStyle(fontSize: 15.0),
                   ),
                   Text("Qty $qty x PHP $price"),
                 ],
@@ -77,7 +77,7 @@ class CartItem extends StatelessWidget {
                     child: const Icon(
                       Icons.remove,
                       color: Colors.white,
-                      size: 16.0,
+                      size: 15.0,
                     ),
                   ),
                 ],
@@ -87,8 +87,8 @@ class CartItem extends StatelessWidget {
           Container(
             padding: const EdgeInsets.only(right: 6.0),
             child: Text(
-              "PHP $total",
-              style: const TextStyle(fontSize: 20.0),
+              "P $total",
+              style: const TextStyle(fontSize: 15.0),
             ),
           ),
         ],
